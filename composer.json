@@ -1,0 +1,27 @@
+{
+  "name": "theitsailors/laravel-justsend",
+  "description": "Biblioteka do wysyłki i zarządzania SMSami dla Laravela przez JustSend.pl.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michał Prusak",
+      "email": "michal.prusak@itsailors.tech"
+    }
+  ],
+  "require": {
+    "laravel/framework": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ItSailors\\Justsend\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ItSailors\\Justsend\\JustsendServiceProvider"
+      ]
+    }
+  }
+}
